@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+    <Button  android:id="@+id/header_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="返回"
+        android:textColor="#000000"/>
+
+    <TextView android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Title Bar"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <Button  android:id="@+id/header_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="图片"
+        android:textColor="#000000"/>
+</LinearLayout>

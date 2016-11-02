@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEB887"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无实现内容"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Gallery
+            android:id="@+id/banner_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="0dp" />
+
+        <ImageButton
+            android:id="@+id/banner_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@null"
+            android:paddingBottom="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="14dp"
+            android:paddingTop="24dp"
+            android:src="@drawable/broker_home_adv_close" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tab4_show_popup_window_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示popupWindow"/>
+    <Button
+        android:id="@+id/tab4_show_a_webivew_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示链接内容"/>
+    <Button
+        android:id="@+id/tab4_show_action_bar_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示ActionBar"/>
+    <Button
+        android:id="@+id/tab4_show_tool_bar_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示ToolBar"/>
+    <Button
+        android:id="@+id/tab4_show_viewpager_ad_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示ViewPagerAd"/>
+
+    <Button
+        android:id="@+id/tab4_show_scroller_touch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示TouchScroller"/>
+</LinearLayout>

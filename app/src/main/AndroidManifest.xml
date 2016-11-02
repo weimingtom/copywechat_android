@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anjuke.copywechat.copywechat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Broker"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="8bd91aac500d6f47c2dad6951995c6d8" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".WebActivityForUrlMessage"
+            android:label="@string/title_activity_web_activity_for_url_message"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ChatActivityTestFri"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".WebViewActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".ActionBarActivity" />
+        <activity
+            android:name=".ToolBarActivityForTab4"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".AnimActivityForAd" />
+        <activity android:name=".ListViewHeaderTestActivity" />
+        <activity android:name=".ScrollTouchActivity" />
+        <activity android:name=".LoginActivity" />
+
+        <receiver
+            android:name=".BootBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".GetServerMsgService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".AmapActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEB887"
+    android:orientation="vertical" >
+   <Button
+        android:id="@+id/page_welcome2_enterapp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入应用"/>
+    <TextView
+        android:id="@+id/page_welcome2_enterapp_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入应用"/>
+</LinearLayout>

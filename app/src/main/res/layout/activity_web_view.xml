@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anjuke.copywechat.copywechat.WebViewActivity">
+    <WebView
+        android:id="@+id/webview_for_tab4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <RelativeLayout
+        android:id="@+id/webview_for_tab4_notify_ly"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content"
+        android:background="@color/header_normal">
+        <TextView
+            android:id="@+id/webview_for_tab4_notify_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通知：XXXXXXX"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/header_pressed"/>
+    </RelativeLayout>
+</RelativeLayout>

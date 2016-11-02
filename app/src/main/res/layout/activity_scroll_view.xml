@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anjuke.copywechat.copywechat.ScrollTouchActivity">
+    <com.anjuke.copywechat.view.MyScrollView
+        android:id="@+id/flag_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/pic_container_ll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/blue">
+                <TextView
+                    android:background="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="OOOOOOOOOOOOOOOOOOOO"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.anjuke.copywechat.view.MyScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_content_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add_content_to_ll_btn"/>
+</RelativeLayout>

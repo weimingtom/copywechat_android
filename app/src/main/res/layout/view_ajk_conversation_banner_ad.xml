@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.anjuke.copywechat.view.WrapContentHeightViewPager
+        android:id="@+id/viewpager_for_ad_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center">
+    </com.anjuke.copywechat.view.WrapContentHeightViewPager>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+    <LinearLayout
+        android:id="@+id/activity_anim_activity_for_ad_dotly"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+    </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/banner_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:paddingBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="14dp"
+        android:paddingTop="24dp"
+        android:src="@drawable/broker_home_adv_close" />
+
+</RelativeLayout>

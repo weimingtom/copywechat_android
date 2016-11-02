@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.anjuke.copywechat.copywechat.MainActivity">
+    <LinearLayout
+        android:id="@+id/layout_menuforprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/savedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ssssss"/>
+        <com.anjuke.copywechat.copywechat.imageviews.RoundImageView
+            android:id="@+id/roundImage_network"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/test" />
+    </LinearLayout>
+<RelativeLayout
+    android:id="@+id/rlayout_maincontent"
+    android:layout_width="400dp"
+    android:layout_height="match_parent">
+
+
+    <!-- 底部四个导航按钮 -->
+    <LinearLayout
+        android:id="@+id/ll_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="近期聊天"
+            android:background="#009eff"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="朋友列表"
+            android:background="#009e00"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/btn_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="动态(36Kr)"
+            android:background="#009eff"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/btn_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="WebView测试"
+            android:background="#009e00"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+
+    <!-- 覆盖在导航按钮上的覆盖层，表示选中项 -->
+    <ImageView
+        android:id="@+id/imgv_overtab"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <!-- 导航和视图的分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f00"
+        android:layout_above="@id/ll_tabs"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_main_viewpager"
+        android:layout_above="@id/ll_tabs"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
+</LinearLayout>

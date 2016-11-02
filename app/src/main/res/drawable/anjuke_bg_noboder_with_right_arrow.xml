@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+
+            <item android:state_pressed="true">
+                <shape>
+                    <gradient
+                        android:startColor="#dddddd"
+                        android:endColor="#dddddd"/>
+                </shape>
+            </item>
+
+            <item android:state_focused="true">
+                <shape>
+                    <gradient
+                        android:startColor="#dddddd"
+                        android:endColor="#dddddd"/>
+                </shape>
+            </item>
+
+            <item android:state_selected="true">
+                <shape>
+                    <gradient
+                        android:startColor="#dddddd"
+                        android:endColor="#dddddd"/>
+                </shape>
+            </item>
+
+            <item >
+                <shape>
+                    <gradient
+                        android:startColor="#ffffffff"
+                        android:endColor="#ffffffff"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+
+    <!-- android:right="12dp" -->
+    <item android:right="12dp"> <!-- 距离右边的距离 -->
+        <bitmap android:src="@drawable/anjuke_icon_arrow"
+            android:gravity="center_vertical|right"/> <!-- 对齐方式 -->
+    </item>
+
+</layer-list>

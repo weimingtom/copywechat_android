@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/recent_chat_item_icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:layout_margin="15dp"
+        android:background="@drawable/fy_list_icon_shop"/>
+
+    <TextView
+        android:id="@+id/recent_chat_item_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:25PM"
+        android:layout_alignTop="@+id/recent_chat_item_name_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp" />
+
+    <TextView
+        android:id="@+id/recent_chat_item_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="近期聊天内容"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/recent_chat_item_name_tv"
+        android:layout_toRightOf="@+id/recent_chat_item_icon_iv"
+        android:layout_toEndOf="@+id/recent_chat_item_icon_iv" />
+
+    <TextView
+        android:id="@+id/recent_chat_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="用户名"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/recent_chat_item_msg_tv"
+        android:layout_alignStart="@+id/recent_chat_item_msg_tv"
+        android:layout_marginTop="7dp" />
+</RelativeLayout>
